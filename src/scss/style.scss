@@ -1,0 +1,52 @@
+@import 'config';
+
+.phone {
+  position: relative;
+  width: 340px;
+  height: 600px;
+  border: 3px solid #eee;
+  border-radius: 15px;
+  overflow: hidden;
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+    object-fit: cover;
+    transition: opacity 0.4s ease;
+    opacity: 0;
+    &.show {
+      opacity: 1;
+    }
+  }
+}
+
+nav {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-top: -5px;
+  width: 100%;
+  ul {
+    display: flex;
+    height: 60px;
+    background-color: #fff;
+    list-style-type: none;
+    li {
+      flex: 1;
+      padding: 10px;
+      color: #777;
+      text-align: center;
+      cursor: pointer;
+      p {
+        margin: 2px 0;
+        font-size: 0.75rem;
+      }
+      &:hover,
+      &.active {
+        color: #8e44ed;
+      }
+    }
+  }
+}
