@@ -1,4 +1,4 @@
-@import 'config';
+@use 'base';
 
 .phone {
   position: relative;
@@ -45,7 +45,7 @@ nav {
       }
       &:hover,
       &.active {
-        color: #8e44ed;
+        color: #4744ed;
       }
     }
   }
